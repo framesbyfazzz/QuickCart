@@ -1,0 +1,47 @@
+.home-page {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-results-info {
+  margin-bottom: 30px;
+}
+
+.search-results-text {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.search-results-text strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.no-results-emoji {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.no-results-text {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.no-results-subtext {
+  font-size: 1rem;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 30px 15px;
+  }
+}

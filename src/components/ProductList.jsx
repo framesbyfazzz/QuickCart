@@ -1,8 +1,11 @@
 import React from 'react';
+import { useCart } from '../context/CartContext';
 import ProductCard from './ProductCard';
 import '../styles/ProductList.css';
 
-function ProductList({ products, onAddToCart }) {
+function ProductList({ products }) {
+  const { addToCart } = useCart();
+
   return (
     <div className="product-list">
       <h2 className="section-title">Our Products</h2>
@@ -11,7 +14,7 @@ function ProductList({ products, onAddToCart }) {
           <ProductCard
             key={product.id}
             product={product}
-            onAddToCart={onAddToCart}
+            onAddToCart={addToCart}
           />
         ))}
       </div>
